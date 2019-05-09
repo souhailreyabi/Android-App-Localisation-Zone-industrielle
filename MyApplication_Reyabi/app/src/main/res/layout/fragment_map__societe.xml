@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map_Societe">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="Localisation des Societe"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textCursorDrawable="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="429dp"
+            android:layout_height="518dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="La légende"
+                android:textAlignment="center"
+                android:textColor="#786" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="231dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GZENAYA" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:textColor="@color/design_default_color_primary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Free Zone" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Orange"
+                        android:textColor="@color/cardview_dark_background" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form_Afficher">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:fontFamily="serif-monospace"
+            android:text="Liste Des Societés"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textCursorDrawable="@color/cardview_dark_background"
+            android:textSize="30dp" />
+
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/listeSociete"
+                    android:layout_width="match_parent"
+                    android:layout_height="593dp"
+                    android:background="@drawable/border_ui"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
